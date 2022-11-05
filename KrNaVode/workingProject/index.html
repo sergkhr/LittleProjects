@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+    </head>
+    <body id="main">
+        <div id="optionsCont">
+            <div class="optionsColumn">
+                <b id="optID">OPTIONS</b>
+                <input type="button" value="hide" id="optionsHider">
+                <div class="optCont">
+                    <p>circle size</p>
+                    <input id="sizeOpt" type="range" min="10" max="200" step="1" value="50">
+                </div>
+                <div class="optCont">
+                    <p>speed option <br> (may cause lags)</p>
+                    <input id="ticOpt" type="range" min="1" max="15" step="1" value="7">
+                </div>
+                <div class="optCont">
+                    <p>circles per second <br> (may cause lags)</p>
+                    <input id="CPSOpt" type="range" min="1" max="100" step="5" value="20">
+                </div>
+                <div class="optCont optList">
+                    <p>circle border is on</p>
+                    <input id="borderOpt" type="checkbox" checked>
+                </div>
+                <div class="optCont">
+                    <p>background color (rgb)</p>
+                    <input id="BGColOpt" type="color" value="#000000">
+                </div>
+                <div class="optCont">
+                    <p>circles background color (rgb)</p>
+                    <input id="CirBGColOpt" type="color" value="#f0f0f0">
+                    <p>circles background opacity</p>
+                    <input id="CirBGOpacityOpt" type="range" min="0" max="1" step="0.001" value="0.377">
+                </div>
+                <div class="optCont">
+                    <p>border</p>
+                    <div class="optCont">
+                        <p>border width (px)</p>
+                        <input id="borderWidthOpt" type="number" value="4">
+                    </div>
+                    <div class="optCont">
+                        <p>border color (px)</p>
+                        <input id="borderColorOpt" type="color" value="#f0f0f0">
+                        <p>border opacity</p>
+                        <input id="borderOpacityOpt" type="range" min="0" max="1" step="0.001" value="0.677">
+                    </div>
+                </div>
+            </div>
+            <div class="optionsColumn">
+                <div class="optCont">
+                    <p>mod (from 1 to 2)</p>
+                    <input id="modOpt" type="number" value="2">
+                </div>
+                <div class="optCont optList">
+                    <p>rain</p>
+                    <input id="randomDropsOpt" type="checkbox">
+                </div>
+                <div class="optCont">
+                    <p>raindrop size</p>
+                    <input id="raindropSizeOpt" type="range" min="10" max="200" step="1" value="100">
+                    <p>raindrop speed<br>(low may cause lags)</p>
+                    <input id="raindropSpeedOpt" type="range" min="1" max="15" step="1" value="5">
+                    <p>raindrops number<br>(high may cause lags)</p>
+                    <input id="raindropNumberOpt" type="range" min="1" max="100" step="1" value="5">
+                </div>
+                <div class="optCont optList">
+                    <p>rainbow</p>
+                    <input id="rainbowOpt" type="checkbox">
+                </div>
+                <div class="optCont">
+                    <p>brightness (0-255)</p>
+                    <input id="rainbowBrightnessOpt" type="range" min="0" max="255" step="1" value="255">
+                    <p>colorfullness (0-255)</p>
+                    <input id="rainbowColorfullnessOpt" type="range" min="0" max="255" step="1" value="255">
+                    <p>color change speed</p>
+                    <input id="rainbowSpeedOpt" type="range" min="5" max="120" step="5" value="20">
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

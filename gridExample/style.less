@@ -1,0 +1,60 @@
+html, body{
+    background-color: rgb(60, 60, 60);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#settings{
+    width: 200px;
+    height: 130px;
+    background-color: rgb(116, 81, 81);
+    border: 1px solid rgb(20, 20, 20);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    p{
+        color: white;
+        margin: 5px 0 0 0;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 100px 50px 100px;
+}
+#gridMain{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 200px);
+    grid-auto-flow: row dense;
+    grid-gap: 10px;
+    max-width: 1540px;
+    width: 100%;
+    height: 100%;
+}
+.gridItem{
+    justify-self: stretch;
+    align-self: stretch;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    &.single{
+        background-color: darkgreen;
+    }
+    &.double{
+        &.horizontal{
+            background-color: darkred;
+            grid-column: span 2;
+        }
+        &.vertical{
+            background-color: darkblue;
+            grid-row: span 2;
+        }
+    }
+    &.bigSquare{
+        background-color: darkgoldenrod;
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}

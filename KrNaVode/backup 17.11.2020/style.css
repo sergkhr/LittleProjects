@@ -1,0 +1,48 @@
+body{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+}
+p{
+    margin: 10px;
+}
+.circle{
+    /*border: 3px solid rgb(212, 145, 38);
+    background-color: rgb(164, 60, 195);*/
+    /* border: 7px solid rgb(0, 0, 0); */
+    /* border: 7px solid rgba(240, 240, 240, 0.677); */
+    /* background-color: rgba(240, 240, 240, 0.377); */
+    border-radius: 100%;
+    position: absolute;
+}
+#optionsCont{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: rgb(235, 225, 186);
+    z-index: 10;
+    display: flex;
+}
+.optionsColumn{
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid black;
+}
+#optID{
+    visibility: visible;
+    color: black;
+}
+#optionsHider{
+    visibility: visible;
+    width: 70px;
+}
+.optCont{
+    margin: 10px;
+}
+.optList{
+    display: flex;
+    align-items: center;
+}
